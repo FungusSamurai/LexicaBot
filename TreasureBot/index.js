@@ -5,7 +5,7 @@ bot.on('message', (message) => {
 
     if (message.content == 'quoteth the raven')
     {
-        message.reply('Nevermore! ' + message.author.toString());
+        message.reply('Nevermore!');
     }
 
 });
