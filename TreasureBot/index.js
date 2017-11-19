@@ -5,14 +5,14 @@ bot.on('message', (message) => {
 
     if (message.content == 'lexisleep')
     {
-        bot.user.message('Going to Sleep');
-        bot.user.setPresence({ status: "invisible", game: { name: 'Dreams' }});
+        bot.user.message('DEBUG: Going to Sleep');
+        //bot.user.setPresence({ status: "invisible", game: { name: 'Dreams' }});
     }
 
     if (message.content == 'lexiwake')
     {
-        bot.user.setPresence({ status: "online", game: { name: 'CraftMine' }});
-        bot.user.message('Good Day.');
+       // bot.user.setPresence({ status: "online", game: { name: 'CraftMine' }});
+        bot.user.message('DEBUG Good Day.');
     }
 
     if (message.content == 'quoteth the raven')
@@ -23,3 +23,5 @@ bot.on('message', (message) => {
 });
 
 bot.login(process.env.BOT_TOKEN);
+
+bot.user.setPresence({ status: "invisible", game: { name: 'Dreams' }});
