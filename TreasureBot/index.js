@@ -6,15 +6,15 @@ bot.on('message', (message) => {
     if (message.content == 'lexi sleep')
     {
         message.channel.sendMessage('DEBUG: Going to Sleep');
-        bot.user.setStatus({status: "invisible"});
-        client.user.setGame("Test Invis");
+      //  bot.user.setStatus({status: "invisible"});
+        bot.user.setGame("Test Invis");
         //bot.user.setPresence({ status: "invisible", game: { name: 'Dreams' }});
     }
 
     if (message.content == 'lexi wake')
     {
         message.channel.sendMessage('DEBUG: Waking Up');
-        client.user.setGame("Test Wake");
+        bot.user.setGame("Test Wake");
     }
 
     if (message.content == 'quoteth the raven')
