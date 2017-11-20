@@ -10,12 +10,9 @@ bot.on('message', (message) => {
         //bot.user.setPresence({ status: "invisible", game: { name: 'Dreams' }});
     }
 
-    if (message.contgitent == 'lexi wake')
+    if (message.content == 'lexi wake')
     {
         message.channel.sendMessage('DEBUG: Waking Up');
-       // bot.user.setStatus({status: "online"});
-       // bot.user.setPresence({ status: "online", game: { name: 'CraftMine' }});
-       // bot.user.message('DEBUG Good Day.');
     }
 
     if (message.content == 'quoteth the raven')
