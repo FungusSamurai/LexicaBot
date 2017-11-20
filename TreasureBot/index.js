@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 bot.on("ready", () => {
     bot.user.setGame("NULL");
-    bpt.user.setStatus({status: "idle"})
+    //bpt.user.setStatus({status: "idle"})
 });
 
 bot.on('message', (message) => {
@@ -11,7 +11,7 @@ bot.on('message', (message) => {
     if (message.content == 'lexi sleep')
     {
         message.channel.sendMessage('DEBUG: Going to Sleep');
-        client.user.setStatus("idle");
+        //client.user.setStatus("idle");
         bot.user.setGame("Counting Sheep");
     }
 
@@ -19,7 +19,7 @@ bot.on('message', (message) => {
     {
         message.channel.sendMessage('DEBUG: Waking Up');
         //bot.user.setStatus({status: "online"});
-        client.user.setStatus("online");
+        //client.user.setStatus("online");
         bot.user.setGame("Sipping Tea");
     }
 
