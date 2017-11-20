@@ -6,7 +6,7 @@ bot.on('message', (message) => {
     if (message.content == 'lexi sleep')
     {
         message.channel.sendMessage('DEBUG: Going to Sleep');
-     //   bot.user.setStatus({status: "invisible"});
+        bot.user.setStatus({status: "invisible"});
         //bot.user.setPresence({ status: "invisible", game: { name: 'Dreams' }});
     }
 
