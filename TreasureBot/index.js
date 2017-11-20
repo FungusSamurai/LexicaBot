@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 bot.on("ready", () => {
     bot.user.setGame("NULL");
-    bpt.user.setStatus({status: "dnd"})
+    bpt.user.setStatus({status: "online"})
 });
 
 bot.on('message', (message) => {
