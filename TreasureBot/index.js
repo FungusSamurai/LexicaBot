@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 bot.on("ready", () => {
     bot.user.setGame("NULL");
-    bpt.user.setStatus("dnd")
+    bpt.user.setStatus({status: "dnd"})
 });
 
 bot.on('message', (message) => {
@@ -13,7 +13,6 @@ bot.on('message', (message) => {
         message.channel.sendMessage('DEBUG: Going to Sleep');
         client.user.setStatus("idle");
         bot.user.setGame("Counting Sheep");
-
     }
 
     if (message.content == 'lexi wake')
