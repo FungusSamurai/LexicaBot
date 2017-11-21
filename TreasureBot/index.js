@@ -24,13 +24,14 @@ bot.on('message', (message) => {
 
     if (message.content == 'quoteth the raven')
     {
-        if (message.author.username == 'Bigmo')
+        
+        if (message.author == 'BigMo')
         {
             message.reply('Hello Yorg, care for some tea?');
         }
         else
         {
-            message.channel.sendMessage('Nevermore!');
+            message.channel.sendMessage('Nevermore! ' + message.author.toString());
         }
     }
 
