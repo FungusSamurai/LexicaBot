@@ -10,7 +10,7 @@ bot.on('message', (message) => {
     if (message.content == 'lexi sleep')
     {
         message.channel.sendMessage('DEBUG: Going to Sleep');
-        //client.user.setStatus("idle");
+        bot.user.setStatus("invisible",);
         bot.user.setGame("Counting Sheep");
     }
 
@@ -18,13 +18,20 @@ bot.on('message', (message) => {
     {
         message.channel.sendMessage('DEBUG: Waking Up');
         //bot.user.setStatus({status: "online"});
-        //client.user.setStatus("online");
+        bot.user.setStatus("online",);
         bot.user.setGame("Sipping Tea");
     }
 
     if (message.content == 'quoteth the raven')
     {
-        message.channel.sendMessage('Nevermore!');
+        if (message.author.username == 'Bigmo')
+        {
+            message.reply('Hello Yorg, care for some tea?');
+        }
+        else
+        {
+            message.channel.sendMessage('Nevermore!');
+        }
     }
 
 });
