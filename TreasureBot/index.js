@@ -2,7 +2,7 @@ const Discord = require ('discord.js');
 const bot = new Discord.Client();
 
 bot.on("ready", () => {
-    
+    bot.user.setStatus("idle",);
 });
 
 bot.on('message', (message) => {
@@ -10,7 +10,7 @@ bot.on('message', (message) => {
     if (message.content == 'lexi sleep')
     {
         message.channel.sendMessage('DEBUG: Going to Sleep');
-        bot.user.setStatus("invisible",);
+        bot.user.setStatus("dnd",);
         bot.user.setGame("Counting Sheep");
     }
 
