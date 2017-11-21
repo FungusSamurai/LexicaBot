@@ -3,6 +3,7 @@ const bot = new Discord.Client();
 
 bot.on("ready", () => {
     bot.user.setStatus("idle",);
+    bot.user.setGame("Watching the Stars");
 });
 
 bot.on('message', (message) => {
@@ -31,7 +32,7 @@ bot.on('message', (message) => {
         }
         else
         {
-            message.channel.sendMessage('Nevermore! ' + message.author.username.toString());
+            message.channel.sendMessage('Nevermore!');
         }
     }
 
