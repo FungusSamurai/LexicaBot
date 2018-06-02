@@ -15,6 +15,9 @@ bot.on('message', (message) => {
         bot.user.setGame("Counting Sheep");
     }
 
+
+
+    
     if (message.content == 'lexi wake')
     {
         message.channel.sendMessage('DEBUG: Waking Up');
