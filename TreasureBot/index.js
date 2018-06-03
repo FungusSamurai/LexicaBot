@@ -15,9 +15,6 @@ bot.on('message', (message) => {
         bot.user.setGame("Counting Sheep");
     }
 
-
-
-    
     if (message.content == 'lexi wake')
     {
         message.channel.sendMessage('DEBUG: Waking Up');
@@ -32,6 +29,26 @@ bot.on('message', (message) => {
         if (message.author.username == 'Bigmotech')
         {
             message.reply('Hello Yorg, care for some tea?');
+        }
+        else if (message.author.username == 'mph0017')
+        {
+            message.reply('Welcome back Bram, how is my bow holding up?');
+        }
+        else if (message.author.username == 'mph0017')
+        {
+            
+        }
+        else if (message.author.username == 'mph0017')
+        {
+
+        }
+        else if (message.author.username == 'mph0017')
+        {
+
+        }
+        else if (message.author.username == 'mph0017')
+        {
+
         }
         else
         {
