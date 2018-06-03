@@ -34,21 +34,21 @@ bot.on('message', (message) => {
         {
             message.reply('Welcome back Bram, how is my bow holding up?');
         }
-        else if (message.author.username == 'mph0017')
+        else if (message.author.username == 'Deutschbag')
         {
-            
+            message.reply('Ah, Alethra, your daughter has been pestering me non-stop for another peek at my spellbook. Is this a visit on behalf of Nestal, or should I alert the fire brigade?');
         }
-        else if (message.author.username == 'mph0017')
+        else if (message.author.username == 'Wattzup')
         {
-
+            message.reply('Oh hello.... you.');
         }
-        else if (message.author.username == 'mph0017')
+        else if (message.author.username == 'ZipzipthePenguin')
         {
-
+            message.reply('Why the emisarry from Kos, how goes things?');
         }
-        else if (message.author.username == 'mph0017')
+        else if (message.author.username == 'Captian_Fish')
         {
-
+            message.reply('Mr. Daya, I am very sorry about how your last visit went. At least, the parts not involving Cirdan. I promise the grounds are again throughly protected form fiendish foes.');
         }
         else
         {
